@@ -1,0 +1,7 @@
+1.We expect lane lines to be nice, pure colors, such as solid white and solid yellow.
+ Both solid white and solid yellow, have high saturation channel values. 
+2.Pure white is bgr(255, 255, 255). Pure yellow is bgr(0, 255, 255).
+ Both have high red channel values.
+3.To generate our binary image at this stage, pixels that have rich red channel values will be set to white.
+ (e.g. > 120 on a scale from 0 to 255)
+ All other pixels will be set to black.
